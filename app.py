@@ -321,11 +321,13 @@ def main():
     tab1, tab2, tab3 = st.tabs(["Package App", "Documentation", "About"])
     
     with tab1:
-        st.info("""
-            ℹ️ **Important Note**: The executable building functionality only works when running this app locally on your computer.
-            This is due to security restrictions on cloud platforms that prevent running PyInstaller.\n
-            You can download the app here: https://sourceboxai.com/more-services
-            """)
+        st.markdown("""
+            <div style="padding: 1rem; border-radius: 0.5rem; background-color: #f8f9fa; border-left: 0.25rem solid #0dcaf0; color: #212529;">
+            ℹ️ <b>Important Note</b>: The executable building functionality only works when running this app locally on your computer.
+            This is due to security restrictions on cloud platforms that prevent running PyInstaller.<br><br>
+            You can download the app here: <a href="https://public-test543464.s3.us-east-2.amazonaws.com/PacknPlay.exe">PacknPlay.exe</a>
+            </div>
+            """, unsafe_allow_html=True)
         # Input section
         st.markdown('<div class="section-header">📋 Project Details</div>', unsafe_allow_html=True)
         with st.container():
@@ -474,11 +476,13 @@ def main():
         st.markdown("## How to Use")
         
         # Add local vs. cloud explanation
-        st.info("""
-        ℹ️ **Important Note**: The executable building functionality only works when running this app locally on your computer.
-        This is due to security restrictions on cloud platforms that prevent running PyInstaller.\n
-        You can download the app here: https://sourceboxai.com/more-services
-        """)
+        st.markdown("""
+        <div style="padding: 1rem; border-radius: 0.5rem; background-color: #f8f9fa; border-left: 0.25rem solid #0dcaf0; color: #212529;">
+        ℹ️ <b>Important Note</b>: The executable building functionality only works when running this app locally on your computer.
+        This is due to security restrictions on cloud platforms that prevent running PyInstaller.<br><br>
+        You can download the app here: <a href="https://public-test543464.s3.us-east-2.amazonaws.com/PacknPlay.exe">PacknPlay.exe</a>
+        </div>
+        """, unsafe_allow_html=True)
         
         st.markdown("### Local Setup")
         st.markdown("""
