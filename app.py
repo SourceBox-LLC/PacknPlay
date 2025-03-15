@@ -12,7 +12,7 @@ import platform
 
 # Set page configuration
 st.set_page_config(
-    page_title="PacknPlay",
+    page_title="Pack-n-Play",
     page_icon="🚀",
     layout="centered",
     initial_sidebar_state="collapsed"
@@ -313,7 +313,7 @@ def main():
     # Header section with logo and title
     col1, col2, col3 = st.columns([1, 3, 1])
     with col2:
-        st.markdown('<div class="main-title"><h1>📦 PacknPlay</h1></div>', unsafe_allow_html=True)
+        st.markdown('<div class="main-title"><h1>📦 Pack-n-Play</h1></div>', unsafe_allow_html=True)
         st.markdown('<div class="description">Transform your python or streamlit app into a standalone executable with just a few clicks.</div>', unsafe_allow_html=True)
     
     
